@@ -18,7 +18,7 @@ public class Servicio {
     }
 
     public Flux<String> buscarTodosLento() {
-        return Flux.just("Pedro", "Maria", "Juan", "Diego").delaySequence(Duration.ofSeconds(20));
+        return Flux.just("Pedro", "Maria", "Juan", "Diego").delaySequence(Duration.ofSeconds(2));
     }
 
     public Flux<String> buscarTodosFiltro() {
